@@ -19,10 +19,40 @@ h1, h2{
     font-style: italic;
 }
 
+p::first-letter {
+    background-color: #9b009b;
+    font-family: monospace;
+    font-size: 25px;
+}
 
 .links{
     color: #CC3333;
     text-decoration: none;
+}
+
+.links:visited{  
+    color: #ce6f6f;
+}
+.links:hover{  
+    color: #FF0000;
+    text-decoration: underline;
+}
+.links:active{   
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+dl{
+    display:none;
+}
+li:hover dl{
+    display:block;
+    cursor: pointer;
+}
+dt{
+    font-weight:bold;
+}
+dd{
+    font-style: italic;
 }
 
 #mood{

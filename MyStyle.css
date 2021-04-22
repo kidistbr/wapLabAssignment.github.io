@@ -1,0 +1,77 @@
+#css-zen-garden{
+    background-color: #7c6d59;
+    color:#050505;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+
+.page-wrapper{
+    background-color: #24212155;
+    /* border: 5px solid #24212155; */
+
+    box-sizing: content-box;
+    padding: 5px;
+}
+
+.intro, .sidebar{
+    background-color: pink;
+}
+
+#zen-supporting{
+    /* background-color: rgb(106, 136, 99); */
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+.wrapper{
+    background-color: rgb(106, 136, 99);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "design-selection design-archives zen-resources";
+}
+
+
+a{
+    text-decoration: none;
+    color: #770000;
+}
+a:visited{
+    color: #58324c;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    color: #45658f;
+}
+
+h1, h2, h3, h4, h5, h6{
+    background-color: #be2a2a;
+    text-align: center;
+}
+header:hover > h1, header:hover > h2, div:hover > h3, 
+div:hover > h4, div:hover > h5, div:hover > h6{
+    color: #00BFFFFF;
+}
+
+.grid-item, footer {
+    background-color: pink;
+    border: 3px solid rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    text-align: center;
+  }
+
+  
+.design-selection {
+    grid-area: design-selection;
+  }
+
+  .design-archives {
+    grid-area: design-archives;
+  }
+
+  .zen-resources {
+    grid-area: zen-resources;
+  }

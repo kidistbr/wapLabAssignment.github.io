@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="lab4Style.css">
+    <title>Assignment 4 - Form example</title>
+</head>
+<body>
+    <div class="nav">
+        <h2>Workshop Registration</h2>
+        <select class="navsel">
+            <option value="">More Action</option>
+        </select>
+    </div>
+    <div class="container">
+        <form action="#" method="POST">
+            <div class="maindiv">
+                <div class="left_part">
+                    <ul>
+                        <li><p class="subtitle">Register now while seats are available!</p></li>
+                        <li><label>First Name<span class="required">*</span></label><input id="firstName" required/></li>
+                        <li><label>Last Name<span class="required">*</span></label><input id="lastName" required/></li>
+                        <li><label>Company/Institution<span class="required">*</span></label><input  id="company" required/></li>
+                        <li><label>Address<span class="required">*</span></label><textarea id="address" required></textarea></li>
+                        <li><label>City</label><input id="city"/></li>
+                        <li><label>State/Province/Region</label><select name="state">
+                            <option value=""">-Select-</option>
+                            <option value="IO">Iowa</option>
+                            <option value="NY">New York</option>
+                            <option value="NV">Nevada</option>
+                        </select></li>
+                        <li><label>Country</label><select name="country">
+                            <option value="">-Select-</option>
+                            <option value="US">United States</option>
+                            <option value="ET">Ethiopia</option>
+                        </select></li>
+                        <li><label>Email<span class="required">*</span></label><input id="email" required/></li>
+                        <li><label>Phone Number<span class="required">*</span></label><input id="phoneNumber" required/></li>
+                    </ul>
+                </div>
+                <div class="right_part">
+                    <ul>
+                        <li><p class="subtitle">Lunch</p></li>
+                        <li><label>Meal Preference</label><select name="mealPreference">
+                            <option value="vegitarian">Vegitarian</option>
+                            <option value="vegan">Vegan</option>
+                            <option value="allMeal">All Meal</option>
+                        </select></li>
+                        <li><p class="subtitle">Payment Details</p></li>
+                        <li><label class="pmode">Payment Mode</label><span class="cboxes">
+                                <span><input type="checkbox" name="cash"/> Cash</span>
+                                <span><input type="checkbox" name="cheque"/> Cheque</span>
+                                <span><input type="checkbox" name="demandDraft"/> Demand Draft</span>
+                        </span>
+                        </li>
+                        <li><label>DD/Cheque No.</label><input type="text" id="dc"/></li>
+                        <li><label >Drawn On (Bank Name)</label><input type="text" id="do"/></li>
+                        <li><label>Payable at</label><input type="text" id="pa"/></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="buttons">
+                <input type="submit"/>
+                <input type="reset"/>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
